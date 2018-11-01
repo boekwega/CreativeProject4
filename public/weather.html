@@ -1,0 +1,57 @@
+<html>
+
+<head>
+  <title>City Finder</title>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+  <form class="w3-container w3-margin w3-deep-orange">
+    Enter a word: <input type="text" id="owlform" value="">
+    <button id="owlbutton">Submit</button>
+    <br><span id="owldef"></span>
+  </form>
+
+  <script>
+    $("#owlbutton").click(function(event) {
+      event.preventDefault();
+      var url = "owl?q=" + $("#owlform").val();
+      console.log(url)
+      $.getJSON(url, function(data) {
+        console.log(data)
+        var everything;
+        everything = "<ul class=\"w3-animate-zoom w3-ul w3-card-4 w3-sand\"><li><h2>Definition</h2></li>";
+        $.each(data, function(i, itme) {
+          everything += "<li>" + data[i].defenition + "</li>";
+        })
+        console.log(everything);
+        $("#owldef").html(everything);
+      })
+    })
+  </script>
+
+  <form class="w3-container w3-margin w3-green">
+    Enter A Utah City (Capitalize the first letter): <input type="text" id="cityfield" value=""><br><span id="txtHint"></span>
+  </form>
+  <script>
+    $("#cityfield").keyup(function() {
+
+      var url = "getcity?q=" + $("#cityfield").val();
+      $.getJSON(url, function(data) {
+        var everything;
+        everything = "<ul class=\"w3-ul w3-card-4 w3-sand\"><li><h2>Suggestions</h2></li>";
+        $.each(data, function(i, item) {
+          everything += "<li> " + data[i].city;
+        });
+        everything += "</ul>";
+        $("#txtHint").html(everything);
+      });
+    });
+  </script>
+
+
+
+</body>
+
+</html>
