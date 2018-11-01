@@ -1,0 +1,9 @@
+Secret Santa App
+
+A user clicks a button and get's the name of the person they need to buy a present for.
+
+That name is served up by node from a text file on the backend.
+
+We style it to look all christmas-y and maybe put in some animations.
+
+And that's it it. 
