@@ -1,6 +1,6 @@
 In lab 4, we have so many different folders. We have bin, node_modules, public, routes, views. Do we need all of these folders in our creative project? What do they all do and what can we get rid of?
 
-Do we need to install node again? Does not need to be installed in each folder? Am I talking about this the right way? Should I have said "express" rather than "node"?
+Do we need to install node again? Does we need to be installed in each folder? Am I talking about this the right way? Should I have said "express" rather than "node"?
 
 Perhaps one way to begin is to copy all of the lab 4 files into the creative project folder and then modify them. Then I'd probably have all the whatnots that are needed to hook things up. I guess my fear is that by doing that, I'd also have way too much stuff and stuff that I don't need. So that makes me thing that I should go through the two hour node tutorials so that I can really understand what everything is doing. But maybe those tutorials aren't going to tell me what the "bin" folder is for. So maybe that will just be a waste of time. I don't know. 
 
