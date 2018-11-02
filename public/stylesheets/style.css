@@ -3,7 +3,8 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   /*background-color: #CC231E; // red */
   /*background-color: #235E6F; */
-  background-color: #87CEFA;
+  /*background-color: #87CEFA;*/
+  background-color: lightblue;
   color: white;
 }
 
@@ -12,8 +13,9 @@ p2 {
 }
 
 button {
-  background-color: #CC231E;
-  color: white;
+  /*background-color: #CC231E;*/
+  background-color: silver;
+  /*color: white;*/
 }
 
 .container { 
