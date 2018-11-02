@@ -10,6 +10,11 @@
 
 <body>
 
+
+<script type="text/javascript" src="">
+  
+</script>
+  
   <div class="container">
     <div class="center">
       
@@ -30,7 +35,6 @@
     </div>
   </div>
 
-
       <script>
         $("#namebutton").click(function(event) {
           event.preventDefault();
@@ -44,7 +48,13 @@
             $("#person").html(data[0].name);
           })
           
-          $("#person").addClass("w3-animate-zoom");
+<<<<<<<<< saved version
+        $("#namebutton").click(function(event) {
+          event.preventDefault();
+          
+=========
+          $("#person").animate({fontSize: '3em'}, "slow");
+>>>>>>>>> local version
         });
       </script>
 
