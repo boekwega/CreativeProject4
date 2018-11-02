@@ -39,8 +39,6 @@
         $("#namebutton").click(function(event) {
           event.preventDefault();
           
-          $("#person").removeClass("w3-animate-zoom");
-          
           var url = "getname";
           $.getJSON(url, function(data) {
             console.log(data);
@@ -48,13 +46,8 @@
             $("#person").html(data[0].name);
           })
           
-<<<<<<<<< saved version
-        $("#namebutton").click(function(event) {
-          event.preventDefault();
-          
-=========
           $("#person").animate({fontSize: '3em'}, "slow");
->>>>>>>>> local version
+
         });
       </script>
 
