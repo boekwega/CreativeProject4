@@ -1,16 +1,16 @@
 body {
   padding: 100px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: #235E6F;
-  color: white;
+  /*background-color: #235E6F;*/
+  /*color: white;*/
 }
 
 a {
   color: #00B7FF;
 }
 
-h2 {
-  color: #E22222;
+p2 {
+  color: #CC231E;
 }
 
 button {
@@ -21,9 +21,9 @@ button {
 .container { 
   height: 200px;
   position: relative;
-  border: 10px;
-  border-style: solid;
-  border-color: #0F8A5F;
+  /*border: 10px;*/
+  /*border-style: solid;*/
+  /*border-color: #0F8A5F;*/
 }
 
 .center {
