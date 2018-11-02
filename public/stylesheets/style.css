@@ -1,17 +1,14 @@
 body {
   padding: 100px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  /*background-color: #235E6F;*/
-  /*color: white;*/
+  /*background-color: #CC231E; // red */
+  /*background-color: #235E6F; */
+  background-color: #87CEFA;
+  color: white;
 }
-
-a {
-  color: #00B7FF;
-}
-
 
 p2 {
-  color: #CC231E;
+  /*color: #CC231E;*/
 }
 
 button {
