@@ -1,10 +1,10 @@
 body {
   padding: 100px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  /*background-color: #CC231E; // red */
+  background-color: #CC231E;
   /*background-color: #235E6F; */
   /*background-color: #87CEFA;*/
-  background-color: lightblue;
+  /*background-color: lightblue;*/
   color: white;
 }
 
