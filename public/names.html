@@ -19,8 +19,8 @@
         event.preventDefault();
          
         var url = "getname";
-        $.getJSON(url, function(name) {
-            $("#person").html(name);
+        $.getJSON(url, function(data) {
+            $("#person").html(data);
         })
     })
   </script>
