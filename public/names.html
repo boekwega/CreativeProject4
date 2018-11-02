@@ -9,8 +9,20 @@
 
 <body>
 
+<h1>Secret Santa</h1>
+
+<p>Get a gift for ... </p> <button id="namebutton">Draw Name</button>
+<div id="person"></div>
+
   <script>
-    
+    $("#namebutton").click(function(event) {
+        event.preventDefault();
+         
+        var url = "getname";
+        $.getJSON(url, function(name) {
+            $("#person").html(name);
+        })
+    })
   </script>
 
 </body>
