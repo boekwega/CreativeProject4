@@ -3,6 +3,8 @@ var router = express.Router();
 // var request = require('request');
 var fs = require('fs');
 
+var name_index = 0;
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
     res.sendFile('names.html', {root: 'public'});
@@ -17,7 +19,9 @@ router.get('/getname', function(req, res, next){
         if(err) throw err;
         var names = data.toString().split("\n");
         var jsonresult = [];
-        var result = names[1];
+        var result = names[name_index];
+        name_index += 1;
+        name_index = name_index % 124;
         if(result != -1) {
             jsonresult.push({name: result});
         }
