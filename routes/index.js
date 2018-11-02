@@ -5,12 +5,11 @@ var fs = require('fs');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-//   res.render('index', { title: 'Express' });
     res.sendFile('names.html', {root: 'public'});
 });
 
 /* get name route */
-router.get("/getname", function(req, res, next){
+router.get('/getname', function(req, res, next){
     
     console.log("in getname route");
     
