@@ -6,8 +6,8 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-router.get("/matchnames", function(req, res, next){
-    
+router.get("/getname", function(req, res, next){
+    console.log("in getname route");
 })
 
 module.exports = router;
