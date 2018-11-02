@@ -9,23 +9,29 @@
 
 <body>
 
-<h1>Secret Santa</h1>
+  <div class="container">
+    <div class="center">
 
-<p>Get a gift for ... </p> <button id="namebutton">Draw Name</button>
-<div id="person"></div>
+      <h1>Secret Santa</h1>
 
-  <script>
-    $("#namebutton").click(function(event) {
-        event.preventDefault();
-         
-        var url = "getname";
-        $.getJSON(url, function(data) {
+      <p>Get a gift for ... </p> <button id="namebutton">Draw Name</button>
+      <div id="person"></div>
+
+      <script>
+        $("#namebutton").click(function(event) {
+          event.preventDefault();
+
+          var url = "getname";
+          $.getJSON(url, function(data) {
             console.log(data);
             console.log("data.name " + data.name);
             $("#person").html(data[0].name);
-        })
-    });
-  </script>
+          })
+        });
+      </script>
+
+    </div>
+  </div>
 
 </body>
 
